@@ -1,16 +1,6 @@
-const userChoice = promt("How many rounds do you want to play?");
+const userChoice = alert(promt("How many rounds do you want to play?"));
 let randomNum = math.floor(math.random()*3);
-const playerChoice = promt("Do you pick rock, paper, or scissors (enter r, p, or s)");
-
-const playerWins (playerChoice, computerChoice) {
-    if (playerChoice === ("r")) {
-        return computerChoice === ("s")
-    } else if (playerChoice === ("p")) {
-        return computerChoice === ("r")
-    } else {
-        return computerChoice === ("p")
-    }
-}
+const playerChoice = alert(promt("Do you pick rock, paper, or scissors (enter r, p, or s)"));
 
 let computerChoice;
 if (randomNum == 0) {
@@ -24,7 +14,7 @@ else {
 
 if (playerChoice === computerChoice) {
     alert("It's a draw!")
-} else if (playerWins(playerChoice, computerChoice)) {
+} else if ((playerChoice, computerChoice)) {
     alert("You won!")
 } else {
     alert("Sorry, Computer Wins!")
