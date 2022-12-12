@@ -1,7 +1,7 @@
 let ties = 0
 let wins = 0
 let losses = 0
-const userChoice = prompt("How many rounds do you want to play?");
+const rounds = prompt("How many rounds do you want to play?");
 let randomNum = Math.floor(Math.random()*3);
 const playerChoice = prompt("Do you pick rock, paper, or scissors (enter r, p, or s)");
 
@@ -31,3 +31,8 @@ if (playerChoice === computerChoice) {
     losses++
 }
 
+for (i = 0; i < rounds.length; i++) {
+    
+}
+
+alert("You won " + wins + " times, you tied " + ties + " times, you lost " + losses + " times")
